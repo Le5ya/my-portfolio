@@ -2,9 +2,6 @@ body {
 	font-family: "Inter", sans-serif;
 }
 .navbar {
-	max-width: 870px;
-	width: 100%;
-	margin: auto;
 	display: flex;
 	align-items: cente;
 	justify-content: space-between;
@@ -20,3 +17,84 @@ body {
 	color: #bf7506;
 	margin-left: 24px;
 }
+.container {
+	max-width: 870px;
+	width: 100%;
+	margin: auto;
+}
+.header {
+	padding: 70px 0;
+	display: flex;
+	align-items: center;
+}
+.header-text {
+	padding-left: 27px;
+}
+.header-strong {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 125%;
+}
+.header-heading {
+	margin-top: 8px;
+	margin-bottom: 24px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 135%;
+	letter-spacing: -0.02em;
+}
+.header-primary {
+	color: #bf7506;
+}
+.social-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.social-link {
+	display: inline-block;
+	padding: 8px;
+}
+.header-links {
+	display: flex;
+	align-items: center;
+}
+.cv-download {
+	display: flex;
+	align-items: center;
+	padding: 7px 8px;
+	margin-left: 55px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color: #bf7506;
+	border-bottom: 2px solid;
+}
+.cv-icon {
+	margin-right: 4px;
+}
+.section-heading {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 125%;
+	letter-spacing: -0.03em;
+	color: #bf7506;
+}
+.card-text-wrapper {
+	padding: 16px;
+}
+.card-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 135;
+	letter-spacing: -0.02em;
+	color: #bf7506;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+/*.tags {
+	list-style-type: none;
+	padding: 0;
+}*/
