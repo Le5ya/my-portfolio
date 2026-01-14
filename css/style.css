@@ -8,6 +8,7 @@ body {
 	display: flex;
 	align-items: cente;
 	justify-content: space-between;
+	margin-top: 40px;
 }
 .nav-list {
 	display: flex;
@@ -104,6 +105,9 @@ social-link {
 .card {
 	max-width: 400px;
 }
+.card-image {
+	max-width: 100%;
+}
 .card-text-wrapper {
 	padding: 16px;
 }
@@ -141,7 +145,7 @@ social-link {
 	border-radius: 4px;
 	margin-right: 4px;
 	margin-top: 8px;
-	margin-bottom: 16px;
+	margin-bottom: 4px;
 }
 .card-buttons {
 	display: flex;
@@ -219,10 +223,18 @@ social-link {
 	color: #211b12;
 }
 .feedback {
+	position: relative;
 	padding: 80px 0 160px;
+}
+.feedback-hand {
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 25%;
 }
 .input-group {
 	position: relative;
+	padding-top: 9px;
 }
 .input-label {
 	position: absolute;
@@ -236,11 +248,8 @@ social-link {
 .input {
 	border: 3px solid #e0dedc;
 	border-radius: 4px;
-	width: 435px;
+	width: 100%;
 	height: 56px;
-}
-.input-group {
-	padding-top: 9px;
 }
 .text-area {
 	min-height: 140px;
@@ -267,4 +276,82 @@ social-link {
 .button-group {
 	display: flex;
 	justify-content: flex-end;
+}
+@media (max-width: 1024) {
+	.container {
+		max-width: 760px;
+	}
+	.card {
+		max-width: 350px;
+	}
+}
+@media (max-width: 790px) {
+	.container {
+		max-width: 576px;
+	}
+	.head-photo {
+		max-width: 150px;
+	}
+	.head-strong {
+		font-size: 36px;
+	}
+	.header-heading {
+		font-size: 18px;
+	}
+	.cv-download {
+		margin-left: 15px;
+	}
+	.card {
+		max-width: 45%;
+	}
+	.card-text-wrapper {
+		padding: 8px 0;
+	}
+	.developer {
+		flex-direction: column;
+	}
+	.developer-photo {
+		width: 100%;
+		height: 350px;
+		margin-bottom: 30px;
+	}
+	.feedback-hand {
+		display: none;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		max-width: 90%;
+	}
+	.header {
+		padding-top: 30px;
+		flex-direction: column;
+		text-align: center;
+	}
+	.header-links,
+	.cards,
+	.navbar {
+		flex-direction: column;
+	}
+	.cv-download {
+		margin-left: 0;
+	}
+	.card {
+		max-width: 100%;
+	}
+	.tags {
+		flex-wrap: wrap;
+	}
+	@media (max-width: 600px) {
+		.form-container {
+			width: 90%;
+		}
+		.nav-list {
+			flex-direction: column;
+		}
+		.nav-link {
+			margin-left: 0;
+			margin-bottom: 10px;
+		}
+	}
 }

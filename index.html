@@ -19,14 +19,14 @@
 		<img src="img/logo.svg" alt="logo">
 		<nav class="navigation">
 			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Проекты</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Связаться</a></li>
+				<li class="nav-item"><a class="nav-link" href="#main">Главная</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portfolio">Проекты</a></li>
+				<li class="nav-item"><a class="nav-link" href="#developer">Обо мне</a></li>
+				<li class="nav-item"><a class="nav-link" href="#skills">Связаться</a></li>
 			</ul>
 		</nav>
 	</div>
-	<header class="header container">
+	<header id="main" class="header container">
 
 		<img src="img/avatar.png" alt="avatar">
 		<div class="header-text">
@@ -62,7 +62,7 @@
 						<img class="social-logo" src="img/icons/youtube.svg" alt="">
 					</li>
 				</ul>
-				<a href="" class="cv-download" download>
+				<a href="cv.pdf" class="cv-download" download>
 					<img src="img/icons/download.svg" class="cv-icon" alt="">
 					<span class="cv-text">Скачать резюме</span>
 				</a>
@@ -70,7 +70,7 @@
 		</div>
 	</header>
 	<!-- header -->
-	<section class="portfolio">
+	<section id="portfolio" class="portfolio">
 		<div class="container">
 			<h2 class="section-heading">Последние проекты</h2>
 			<div class="cards container">
@@ -102,7 +102,7 @@
 				</div>
 				<!-- card -->
 				<div class="card">
-					<img src="img/portfolio/image 2.jpg" alt="">
+					<img src="img/portfolio/image 2.jpg" class="card-image" alt="">
 					<div class="card-text-wrapper">
 						<h3 class="card-title">Одностраничный промо-сайт</h3>
 						<ul class="tags">
@@ -134,7 +134,7 @@
 		</div>
 	</section>
 	<!-- portfolio -->
-	<section class="developer container">
+	<section id="developer" class="developer container">
 		<img class="developer-photo" src="img/developer-photo.jpg" alt="">
 		<div class="developer-about">
 			<span class="developer-hellow">Рад вас видеть</span>
@@ -150,7 +150,7 @@
 		</div>
 	</section>
 	<!-- developer -->
-	<section class="skills container">
+	<section id="skills" class="skills container">
 		<div class="skills-title">Работаю с разными языками и инструментами</div>
 		<ul class="tags">
 			<li class="tag-item"><a class="tag" href="#">HTML</a></li>
@@ -165,30 +165,33 @@
 		</ul>
 	</section>
 	<!-- skills -->
-	<section class="feedback container">
-		<h2 class="feedback-title">Готов обсудить проект...</h2>
-		<form class="form form-container" action="">
-			<div class="input-group">
-				<label for="username" class="input-label">Name</label>
-				<input id="username" class="input" type="text">
-			</div>
-			<div class="input-group">
-				<label for="userEmail" class="input-label">Email</label>
-				<input id="userEmail" class="input" type="text">
-			</div>
-			<div class="input-group">
-				<label for="userMessage" class="input-label"></label>
-				<textarea id="userMessage" cols="30" rows="30" class="input textarea" type="text"></textarea>
-			</div>
-			<!-- input-group -->
-			<div class="button-group">
-				<button type="submit" class="submit-button">
-					<img src="img/icons/send-icon.svg" class="send-icon" alt="send-icon">
-					<span class="submit-text">Отправить</span>
-				</button>
-			</div>
+	<section id="feedback" class="feedback">
+		<img src="img/feedback-hand.png" alt="" class="feedback-hand">
+		<div class="form-container">
+			<h2 class="feedback-title">Готов обсудить проект...</h2>
+			<form class="form" action="">
+				<div class="input-group">
+					<label for="username" class="input-label">Name</label>
+					<input id="username" class="input" type="text">
+				</div>
+				<div class="input-group">
+					<label for="userEmail" class="input-label">Email</label>
+					<input id="userEmail" class="input" type="text">
+				</div>
+				<div class="input-group">
+					<label for="userMessage" class="input-label"></label>
+					<textarea id="userMessage" cols="30" rows="30" class="input textarea" type="text"></textarea>
+				</div>
+				<!-- input-group -->
+				<div class="button-group">
+					<button type="submit" class="submit-button">
+						<img src="img/icons/send-icon.svg" class="send-icon" alt="send-icon">
+						<span class="submit-text">Отправить</span>
+					</button>
+				</div>
 
-		</form>
+			</form>
+		</div>
 	</section>
 </body>
 
